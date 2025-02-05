@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { MenuProvider } from "@/lib/MenuContext";
+
 import "./globals.css";
+import Script from "next/script"; // Required for external JS files
+import LenisScroll from "@/components/LenisScroll";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +33,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <MenuProvider>
+          <LenisScroll />
+          <NavBar />
+          {children}
+          <Footer />
+        </MenuProvider>
+
+        {/* Load Swiper and GSAP dynamically */}
+        <Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" />
+
+        <Script src="/app.js" />
       </body>
     </html>
   );

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 239.13 181.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="119.19" cy="88.64" fx="119.19" fy="-15.03" r="103.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fafe21"/>
+      <stop offset=".87" stop-color="#ffa550"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polygon points="151.07 52.18 193.49 44.81 176.9 70.62 220.24 77.09 186.12 99.21 224.84 123.19 177.82 120.44 183.6 154.36 149.23 135.19 141.39 181.3 113.26 138.88 95.06 180.78 85.58 145.34 55.15 161.92 64.37 129.66 9.04 135.18 44.08 109.83 7.19 81.71 53.32 72.93 31.29 36.3 80.52 61.38 91.58 25.44 116.48 56.78 143.59 19.96 151.07 52.18"/>
+    <polygon class="cls-1" points="157.2 36.11 203.19 28.12 185.2 56.1 232.19 63.12 195.2 87.1 237.19 113.1 186.2 110.11 192.47 146.9 155.2 126.11 146.7 176.1 116.2 130.11 96.47 175.54 86.19 137.11 53.19 155.1 63.19 120.11 3.2 126.1 41.19 98.62 1.19 68.12 51.2 58.6 27.32 18.88 80.7 46.08 92.69 7.11 119.69 41.09 149.09 1.17 157.2 36.11"/>
+  </g>
+</svg>
