@@ -36,6 +36,11 @@
   --timing: 400ms;
   --rotation: 25deg;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   /* 3. Add accessible line-height */
   line-height: 1.5;
@@ -92,10 +97,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
-html {
-  /* 62.5% of 16px user agent font size is 10px */
-  font-size: 62.5%;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   /* background: #f5f5f5; */

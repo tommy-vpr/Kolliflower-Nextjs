@@ -40,7 +40,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link href="/products" onClick={closeMenu}>
-              Shop
+              Products
             </Link>
           </li>
           <li>

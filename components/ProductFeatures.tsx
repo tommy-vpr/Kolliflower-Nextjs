@@ -5,7 +5,7 @@ const ProductFeatures = () => {
     <div className="icons">
       <div className="icon-item">
         <div className="icon-img">
-          <img src="images/wee-blog.jpg" />
+          <img src="/images/wee-blog.jpg" />
         </div>
         <h3 className="p-1">Placeholder</h3>
         <p>
@@ -17,7 +17,7 @@ const ProductFeatures = () => {
       </div>
       <div className="icon-item">
         <div className="icon-img">
-          <img src="images/wee-blog-2.jpg" />
+          <img src="/images/wee-blog-2.jpg" />
         </div>
         <h3 className="p-2">Placeholder</h3>
         <p>
@@ -29,7 +29,7 @@ const ProductFeatures = () => {
       </div>
       <div className="icon-item">
         <div className="icon-img">
-          <img src="images/wee-blog-3.jpeg" />
+          <img src="/images/wee-blog-3.jpeg" />
         </div>
 
         <h3 className="p-3">Placeholder</h3>

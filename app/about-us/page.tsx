@@ -46,7 +46,7 @@ const page = () => {
         <img
           id="about-title"
           className="about-title"
-          src="images/about-title-d.webp"
+          src="/images/about-title-d.webp"
           alt=""
         />
       </div>
@@ -65,7 +65,7 @@ const page = () => {
         </div>
         <img
           className="about-weed-hero"
-          src="images/weed-in-jars-b.webp"
+          src="/images/weed-in-jars-b.webp"
           alt="about in hero"
           width="600px"
         />

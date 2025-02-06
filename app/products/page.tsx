@@ -5,11 +5,14 @@ import gsap from "gsap";
 import Image from "next/image";
 import { animateTitles } from "@/lib/animateTitles";
 
-const products = Array(12).fill({
-  image: "/images/hover-3.png",
-  title: "Kolliflower",
-  price: "$19.00",
-});
+import strains from "@/data/strains";
+import Link from "next/link";
+
+// const products = Array(12).fill({
+//   image: "/images/hover-3.png",
+//   title: "Kolliflower",
+//   price: "$19.00",
+// });
 
 const ProductsPage = () => {
   useEffect(() => {
@@ -64,26 +67,28 @@ const ProductsPage = () => {
       {/* Product Grid */}
       <div className="products-mid">
         <div className="products-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product, index) => (
-            <div key={index} className="products-item bg-white p-4 rounded-lg">
-              <div className="product-item-img">
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  width={300}
-                  height={300}
-                />
+          {strains.map((product, index) => (
+            <Link href={`/products/${product.name}`} key={product.name}>
+              <div className="products-item bg-white p-4 rounded-lg">
+                <div className="product-item-img">
+                  <Image
+                    src={"/images/hover-3.png"}
+                    alt={product.name}
+                    width={300}
+                    height={300}
+                  />
+                </div>
+                <div className="product-item-info">
+                  <h3 className="product-item-title font-bold">
+                    {product.name}
+                  </h3>
+                  {/* <p className="product-item-price text-lg">{product.price}</p> */}
+                  <button className="product-shop-now bg-black text-white px-4 py-2 rounded-md mt-3">
+                    Shop Now
+                  </button>
+                </div>
               </div>
-              <div className="product-item-info">
-                <h3 className="product-item-title font-bold">
-                  {product.title}
-                </h3>
-                <p className="product-item-price text-lg">{product.price}</p>
-                <button className="product-shop-now bg-black text-white px-4 py-2 rounded-md mt-3">
-                  Shop Now
-                </button>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

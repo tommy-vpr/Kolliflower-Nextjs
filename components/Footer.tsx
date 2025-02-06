@@ -6,13 +6,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="social-icons bubble">
         <div className="social-icon">
-          <img src="images/fb-icon.png" alt="facebook" />
+          <img src="/images/fb-icon.png" alt="facebook" />
         </div>
         <div className="social-icon">
-          <img src="images/x-icon.png" alt="x" />
+          <img src="/images/x-icon.png" alt="x" />
         </div>
         <div className="social-icon">
-          <img src="images/ig-icon.png" alt="instagram" />
+          <img src="/images/ig-icon.png" alt="instagram" />
         </div>
       </div>
       <ul>
@@ -20,7 +20,7 @@ const Footer = () => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/products">Shop</Link>
+          <Link href="/products">Products</Link>
         </li>
         <li>
           <Link href="/about-us">About Us</Link>
