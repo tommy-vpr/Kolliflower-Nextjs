@@ -7,6 +7,7 @@ import Script from "next/script"; // Required for external JS files
 import LenisScroll from "@/components/LenisScroll";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { ModalProvider } from "@/context/ModalContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +35,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <MenuProvider>
-          <LenisScroll />
-          <NavBar />
-          {children}
-          <Footer />
+          <ModalProvider>
+            <LenisScroll />
+            <NavBar />
+            {children}
+            <Footer />
+          </ModalProvider>
         </MenuProvider>
 
         {/* Load Swiper and GSAP dynamically */}

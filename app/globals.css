@@ -411,7 +411,7 @@ header ul li {
   padding: 1rem;
   font-size: 1.6rem;
 }
-.p-1 {
+/* .p-1 {
   background: orange;
 }
 .p-2 {
@@ -419,7 +419,7 @@ header ul li {
 }
 .p-3 {
   background: lightgreen;
-}
+} */
 .learn-more {
   padding: 0.8rem 1.5rem;
   border: 1px solid #111;
@@ -654,7 +654,7 @@ form button:hover {
 }
 
 .kolliflower-logo {
-  width: 250px;
+  width: 180px;
 }
 
 .header-b {
@@ -1006,7 +1006,7 @@ form button:hover {
 
 /* Active state for slide-down menu */
 .slide-down-menu.active {
-  top: 77.64px; /* Adjust based on your nav height */
+  top: 62.67px; /* Adjust based on your nav height */
 }
 
 /* Content from /mnt/data/style-c.css */
@@ -1434,13 +1434,13 @@ form button:hover {
 }
 @media screen and (max-width: 900px) {
   .slide-down-menu.active {
-    top: 66.9px;
+    top: 52.38px;
   }
   .slide-down-menu ul {
     padding: 10px;
   }
   .kolliflower-logo {
-    width: 200px;
+    width: 160px;
   }
   .call-out {
     width: 100%;
@@ -1485,7 +1485,7 @@ form button:hover {
 }
 @media screen and (max-width: 768px) {
   .slide-down-menu.active {
-    top: 58.33px;
+    top: 54.08px;
   }
   .main-nav {
     padding: 1rem 2rem;
@@ -1498,7 +1498,7 @@ form button:hover {
     font-size: 1.5rem;
   }
   .kolliflower-logo {
-    width: 160px;
+    width: 140px;
   }
   .hero-slider-wrapper {
     padding: 4rem 2rem 0;
@@ -1560,13 +1560,25 @@ form button:hover {
   .lt-age-modal-content {
     width: 100%;
   }
+  .swiper-hero-word {
+    width: 36%;
+  }
+  .hero-word-1 {
+    top: 1rem;
+  }
+
+  .hero-word-3 {
+    top: 4rem;
+    left: 35%;
+    width: 40%;
+  }
 }
 @media screen and (max-width: 480px) {
   .slide-down-menu.active {
-    top: 51.89px;
+    top: 49.78px;
   }
   .kolliflower-logo {
-    width: 140px;
+    width: 120px;
   }
   .center {
     padding: 2rem;

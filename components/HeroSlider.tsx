@@ -53,7 +53,7 @@ const HeroSlider = () => {
           modules={[Navigation, Pagination, Autoplay]}
           navigation
           pagination={{ clickable: true }}
-          autoplay
+          // autoplay
           loop={true}
           speed={500}
           className="hero-slider"
@@ -68,6 +68,7 @@ const HeroSlider = () => {
                 width={220}
                 height={100}
                 quality={100}
+                priority
               />
               <img
                 className="swiper-hero-img"
@@ -87,6 +88,7 @@ const HeroSlider = () => {
                 width={200}
                 height={100}
                 quality={100}
+                priority
               />
               <img
                 className="swiper-hero-img"
@@ -105,6 +107,7 @@ const HeroSlider = () => {
                 alt="boom"
                 width={200}
                 height={100}
+                priority
               />
               <img
                 className="swiper-hero-img"
